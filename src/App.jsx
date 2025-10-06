@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("/data.json")
+    fetch(`${import.meta.env.BASE_URL}data.json`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched data:", data);

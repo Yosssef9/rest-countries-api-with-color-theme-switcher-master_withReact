@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--card-bg);
+  box-shadow: -2px 5px 20px #0000002b;
+}
+
+h1,
+.darkModeIcon {
+  color: var(--text-color);
+}
+
+.darkModeIcon {
+  cursor: pointer;
+  gap: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.darkModeIcon:hover {
+  filter: brightness(90%);
+}

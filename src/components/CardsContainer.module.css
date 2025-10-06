@@ -1,0 +1,74 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+  margin: 70px 120px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.pageItem {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.pageItem:hover {
+  background-color: #f0f0f0d8;
+}
+
+.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.prev,
+.next {
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pageLink {
+  display: block; /* خلي اللينك ياخد كل مساحة li */
+  padding: 10px 15px; /* حجم المربع */
+  text-align: center;
+  text-decoration: none;
+}
+
+.cardLink {
+  text-decoration: none; /* يشيل الخط */
+  color: inherit; /* ياخد نفس لون النص الحالي */
+}
+
+.cardLink:visited {
+  color: inherit; /* لما الرابط يكون متزور، يفضل بنفس اللون */
+}
+
+.noData {
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  align-items: center; /* توسيط عمودي */
+  height: 300px; /* ارتفاع مناسب للمكان */
+  font-size: 1.5rem; /* حجم الخط */
+  color: #555; /* لون النص */
+
+  margin: 50px 0; /* مسافة من فوق وتحت */
+  text-align: center;
+}

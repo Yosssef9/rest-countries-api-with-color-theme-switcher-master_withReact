@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/* ==========================
+   Light Theme
+========================== */
+body.light {
+  --bg-color: hsl(0, 0%, 99%); /* Light Mode Background (Grey 50) */
+  --text-color: hsl(200, 15%, 8%); /* Light Mode Text (Grey 950) */
+  --card-bg: hsl(0, 0%, 100%); /* Light Mode Elements (White) */
+  --button-bg: hsl(0, 0%, 50%); /* Light Mode Input/Buttons (Grey 400) */
+}
+
+/* ==========================
+   Dark Theme
+========================== */
+body.dark {
+  --bg-color: hsl(207, 26%, 17%); /* Dark Mode Background (Blue 950) */
+  --text-color: hsl(0, 100%, 100%); /* Dark Mode Text (White) */
+  --card-bg: hsl(209, 23%, 22%); /* Dark Mode Elements (Blue 900) */
+  --button-bg: hsl(209, 23%, 22%); /* Dark Mode Buttons (Blue 900) */
+}
+
+/* Default styles that use variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}

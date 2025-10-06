@@ -1,0 +1,92 @@
+.countryDetails {
+  margin: 50px 100px;
+}
+
+.backButton {
+  margin-bottom: 50px;
+  background-color: var(--card-bg);
+  padding: 5px 10px;
+  box-shadow: 1px 1px 1px #00000054;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.detailsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+
+.imgContainer {
+  padding: 15px;
+  /* background-color: var(--card-bg); */
+  background-color: hsl(209, 23%, 22%);
+  border-radius: 10px;
+}
+
+.countryFlag {
+  min-width: 100%;
+  height: 100%;
+}
+
+.countryInfo {
+  padding: 50px 0;
+}
+
+.countryName {
+}
+
+.infoColumns {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, auto);
+  column-gap: 80px;
+  width: fit-content;
+}
+
+.infoColumns p {
+  margin: 10px 0;
+
+  white-space: nowrap;
+}
+
+.leftColumn {
+}
+
+.rightColumn {
+}
+
+.borderCountries {
+  margin-top: 50px;
+  display: flex;
+  column-gap: 10px;
+  white-space: nowrap;
+}
+
+.borderList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.borderList span {
+  display: inline-block;
+  background-color: var(--card-bg);
+  padding: 5px 10px;
+  box-shadow: 1px 1px 1px #00000054;
+  width: 100%;
+  text-align: center;
+  transition: 500ms;
+}
+
+.borderList span:hover {
+  filter: brightness(90%);
+}
+
+.link {
+  text-decoration: none; /* يشيل الخط */
+  color: inherit; /* ياخد نفس لون النص الحالي */
+}
+
+.link:visited {
+  color: inherit; /* لما الرابط يكون متزور، يفضل بنفس اللون */
+}

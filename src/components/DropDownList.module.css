@@ -1,0 +1,49 @@
+.dropdown {
+  width: 200px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  transition: 500ms;
+}
+
+.dropdownButton {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 500ms;
+  box-shadow: 1px 1px 20px #0000007a;
+}
+
+.dropdownButton:hover {
+  border-color: #888;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-bg);
+  border-radius: 8px;
+  max-height: 266px;
+  overflow-y: auto;
+  z-index: 100;
+  transition: 500ms;
+  box-shadow: 1px 1px 20px #0000007a;
+}
+
+.dropdownItem {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.dropdownItem:hover {
+  background-color: var(--bg-color);
+}
